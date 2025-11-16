@@ -1,0 +1,22 @@
+h1 {
+    color:black;
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+}
+h2 {
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+}
+p {
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+background {
+    background-color: #f0f0f0;
+}
