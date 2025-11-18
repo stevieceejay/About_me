@@ -1,5 +1,12 @@
+* {
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color:darkslategrey ;
+    background-color:lightgray ;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -38,4 +45,91 @@ input:focus, textarea:focus {
     outline-style: solid;
     outline-color: black;
         }
+    
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid royalblue;
+  outline-offset: 2px;
+    }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section, header {
+   width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+@media(max-width: 768px){
+section, header {
+   width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+
+
+nav {
+  background-color: royalblue;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color:#fff;
+  color: royalblue;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: royalblue;
+  color: white;
+}
+
+.white-box {
+    background-color: white;
+    border: radius 8px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box_shadow: 0 4px 8pxx rgba(0, 0, 0, 0.1);
+
+
+}
