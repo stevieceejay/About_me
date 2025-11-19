@@ -151,3 +151,12 @@ img.responsive {
     border: 4px solid royalblue;
     height: 100%;
 }
+
+a {
+  color: #005fcc;
+  text-decoration: underline;
+}
+a:hover {
+  color: #003f99;
+  background-color: #e6f0ff;
+}
