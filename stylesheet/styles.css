@@ -25,13 +25,14 @@ label {
     color: #f0f0f0;
     font-size: 18px;
     font-weight: 500;
-    display: inline;
+    display: block;
+    margin-bottom: 8px;
 }
 
  input, textarea {
     font: 1em sans-serif;
     width: 300px;
-    border: 1px royalblue;
+    border: 1px solid royalblue;
         }
 
 input:focus, textarea:focus {
@@ -104,7 +105,7 @@ table {
   border-collapse: collapse;
   background-color:gray;
   color: royalblue;
-  display: inline-block;
+  display: table;
 }
 
 th,
@@ -117,7 +118,7 @@ td {
 thead {
   background-color: royalblue;
   color: gray;
-    display: flex;
+    display: table-header-group;
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
@@ -139,7 +140,7 @@ img.responsive {
     height: 100%;
 }
 
-a {
+nav a {
   color: #005fcc;
   text-decoration: underline;
 }
@@ -157,9 +158,33 @@ a:hover {
   color: #005fcc;
 }
 
-ul, ol {
+ul, ol{
   color: royalblue;
   font-size: 18px;
   margin-bottom: 8px;
   line-height: 1.5;
+}
+
+button {
+  background-color: royalblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #003f99;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+.mt-20 {
+  margin-top: 20px;
 }
