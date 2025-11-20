@@ -1,12 +1,5 @@
-* {
-    outline: none;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color:lightgray ;
+    background-color: gray;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -29,7 +22,7 @@ p {
 }
 
 label {
-    color: white;
+    color: #f0f0f0;
     font-size: 18px;
     font-weight: 500;
     display: inline;
@@ -38,12 +31,12 @@ label {
  input, textarea {
     font: 1em sans-serif;
     width: 300px;
-    border: 1px solid #999999;
+    border: 1px royalblue;
         }
 
 input:focus, textarea:focus {
     outline-style: solid;
-    outline-color: black;
+    outline-color: royalblue;
         }
     
 input:focus-visible,
@@ -65,9 +58,8 @@ section, header {
 }
 @media(max-width: 768px){
 section, header {
-   width: 50%;
-    margin: 0 auto;
-    padding: 20px;
+   width: 90%;
+    padding: 10px;
     }
 }
 .container {
@@ -77,8 +69,8 @@ section, header {
 }
 
 .card {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: gray;
+  border: 1px solid royalblue;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -87,13 +79,16 @@ section, header {
 
 
 nav {
-  background-color: royalblue;
+  background-color: #f0f0f0;
   padding: 10px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav a {
-  color: white;
+  color: royalblue;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
@@ -104,31 +99,24 @@ nav a:hover {
 }
 
 table {
-  width: 80%;
+  width: 100%;
   margin: 20px auto;
   border-collapse: collapse;
-  background-color:#fff;
+  background-color:gray;
   color: royalblue;
+  display: inline-block;
 }
 
 th,
 td {
   padding: 10px;
   text-align: center;
-  border: 1px solid #ddd;
+  border: 1px solid royalblue;
 }
 
 thead {
   background-color: royalblue;
-  color: white;
-}
-
-.white-box {
-    background-color: white;
-    border: radius 8px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
+  color: gray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,12 +130,11 @@ img.responsive {
 
 .flex-container {
     display: flex;
-    display: -ms-inline-grid;
 }
 
 .flex-container div{
     flex: 1;
-    background: whitesmoke;
+    background: gray;
     border: 4px solid royalblue;
     height: 100%;
 }
@@ -158,9 +145,21 @@ a {
 }
 a:hover {
   color: #003f99;
-  background-color: #e6f0ff;
+  background-color: gray;
+}
+
+.card:hover {
+  background-color: #dcdcdc;
+  transition: background-color 0.3s ease;
 }
 
 .name-cell {
   color: #005fcc;
+}
+
+ul, ol {
+  color: royalblue;
+  font-size: 18px;
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
